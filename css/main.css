@@ -1,0 +1,919 @@
+@font-face {
+    font-family: 'YESMyoungjo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESMyoungjo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'YESMyoungjo-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESMyoungjo-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src :url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #fff;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+ display: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+#wrap {
+    width: 100%;
+}
+.title {
+    font-family: 'adobe-kaiti-std', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+.sub_title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 10px;
+    letter-spacing: 0.8em;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.extxt {
+    font-family: 'YESMyoungjo-Regular';
+    font-size: 14px;
+    color: #636363;
+    line-height: 1.6em;
+}
+
+
+
+
+/*--------- reserve ---------*/
+#reserve {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: none;
+}
+#re_topbar {
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+.re_logo {
+    position: absolute;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+.re_logo img {
+    height: 40px;
+    margin-top: 20px;
+}
+
+/* home btn */
+#home_group {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+}
+.home_btn {
+    position: absolute;
+    width: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 20px;
+    bottom: 0;
+    cursor: pointer;
+}
+.under_drop {
+    width: 40px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+.under_drop h1 {
+    position: absolute;
+    left: 10px;
+    font-weight: 300;
+    font-size: 24px;
+    color: #fff;
+}
+.home_btn p {
+    width: 45px;
+    margin-left: -3px;
+    position: relative;
+    top: -45px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* check in out */
+#check {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(241, 241, 241) ;
+    font-family: 'Roboto', sans-serif;
+}
+.check_bar {
+    width: 1350px;
+    height: 150px;
+    position: relative;
+}
+
+.inout {
+    width: 420px;
+    height: 150px;
+    margin-left: 50px;
+    float: left;
+}
+
+.check_in_out {
+    float: left;
+    width: 150px;
+    margin-top: 45px;
+    text-align: center;
+}
+.check_in_out label {
+    font-size: 14px;
+    color: #545454;
+}
+.check_in_out input {
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(241, 241, 241) ;
+}
+
+.date {
+    float: left;
+    width: 80px;
+    margin: 35px 20px 0 20px;
+}
+.date > p {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+
+
+/* personnel */
+.personnel {
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin: 0 50px 0 100px;
+    text-align: center;
+}
+.personnel > p {
+    width: 80px;
+    float: left;
+    font-size: 22px;
+    line-height: 150px;
+}
+.plmi {
+    width: 120px;
+    height: 30px;
+    float: left;
+    margin-top: 60px;
+}
+.personnel button {
+    width: 50px;
+    float: left;
+    border: none;
+    font-size: 24px;
+    background-color: rgb(241, 241, 241) ;
+}
+.minus {
+    margin-top: -2px;
+}
+.result {
+    width: 20px;
+    height: 150px;
+    float: left;
+    font-size: 24px;
+}
+
+/* total */
+.total {
+    width: 200px;
+    line-height: 150px;
+    margin: 0 50px 0 50px;
+    float: left;
+    font-size: 22px;
+    text-align: center;
+}
+.re_btn {
+    width: 200px;
+    line-height: 150px;
+    text-align: center;
+    float: left;
+}
+.re_btn button {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+/*---------- calendar ----------*/
+#reserve_inner {
+    width: 1350px;
+    height: 550px;
+    position: relative;
+}
+
+.calendar_container {
+    position:absolute;
+    top:2%;
+    /* display: flex; */
+    /* justify-content:space-evenly; */
+    width: 55%;
+}
+
+.hide {
+    display:none;
+}
+
+.calendar_container > button {
+    height: 15px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.left_button {
+    position: absolute;
+    left: 90px;
+    font-size: 20px;
+    top: 0;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.right_button {
+    position: absolute;
+    right: -70px;
+    font-size: 20px;
+    top: 0;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.calendar {
+    width: 900px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+table .title {
+    font-size: 24px;
+    padding: 25px 0 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.calendar_days > button  {
+    width:60px;
+    height: 60px;
+    margin: 0 30px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: transparent;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.day {
+    text-align: center;
+    font-size:12px;
+    font-weight: bold;
+    color:#545454;
+}
+
+.day_hover {
+    transition: 0.3s;
+    background-color: rgb(241, 241, 241) !important;
+}
+
+.day_selected {
+    background-color: black !important;
+    color: #ffff;
+}
+
+.gray {
+    background-color: rgb(241, 241, 241) !important;
+}
+.first {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.last {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+
+/* room */
+#tatami_room {
+    position:absolute;
+    right:50px;
+    width: 400px;
+    height: 550px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.tatami_title h2 {
+    font-size: 18px;
+    margin: 30px 0 20px 0;
+}
+.deluxe {
+    width: 400px;
+    position: relative;
+    filter: grayscale(1);
+    margin-bottom: 20px;
+}
+.deluxe:hover {
+    transition: 0.3s;
+    filter: grayscale(0);
+}
+.deluxe img {
+    height: 130px;
+}
+.deluxe h3 {
+    font-size: 16px;
+    margin: 10px 0 5px 0;
+}
+.deluxe p {
+    font-size: 14px;
+    filter: grayscale(0);
+    color: rgb(164, 0, 0);
+}
+.deluxe button {
+    width: 130px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #fff;
+    color: #000;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.deluxe button:hover {
+    color: #fff;
+    background-color: #000;
+    transition: 0.3s;
+}
+
+.suite {
+    width: 400px;
+    position: relative;
+    filter: grayscale(1);
+    margin-bottom: 20px;
+}
+.suite:hover {
+    transition: 0.3s;
+    filter: grayscale(0);
+}
+.suite img {
+    height: 130px;
+}
+.suite h3 {
+    font-size: 16px;
+    margin: 10px 0 5px 0;
+}
+.suite p {
+    font-size: 14px;
+    filter: grayscale(0);
+    color: rgb(164, 0, 0);
+}
+.suite button {
+    width: 130px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #fff;
+    color: #000;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.suite button:hover {
+    color: #fff;
+    background-color: #000;
+    transition: 0.3s;
+}
+
+
+
+/*--------- header ---------*/
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/main_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* logo */
+.logo {
+    position: absolute;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    position: fixed;
+    z-index: -1;
+}
+.logo img {
+    height: 40px;
+    margin-top: 20px;
+}
+
+
+/* reserve */
+.reserve_btn {
+    position: relative;
+    position: fixed;
+    width: 40px;
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+    height: 20px;
+    mix-blend-mode: difference;
+    cursor: pointer;
+    z-index: 1;
+}
+.drop {
+    width: 40px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+}
+.drop h1 {
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    font-size: 24px;
+}
+.reserve_btn p {
+    width: 60px;
+    position: relative;
+    color: #fff;
+    top: 50px;
+    left: -7px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* fix nav */
+nav {
+    width: 24px;
+    height: 18px;
+    position: absolute;
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    cursor: pointer;
+    mix-blend-mode: difference;
+    z-index: 99;
+}
+nav li {
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 6px;
+}
+
+
+/* tomonoya title */
+#main_tomo {
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+.tomo_title {
+    width: 125px;
+    height: 150px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.tomo_jp {
+    position: absolute;
+    writing-mode: tb-rl;
+    left: 45px;
+}
+.tomo_en {
+    margin-top: 120px;
+    display: inline-block;
+}
+
+
+/* tomonoya subtxt */
+.tomo-ex {
+    width: 170px;
+    height: 600px;
+    position: relative;
+    top: 50%;
+    left: -37%;
+    transform: translateY(-50%);
+    margin-top: -150px;
+    color: #fff;
+}
+.tomo-ex p {
+    position: absolute;
+    writing-mode: tb-rl;
+}
+
+
+/*--------- ryokan ---------*/
+#ryokan {
+    width: 100%;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+}
+#ryokan_inner {
+    width: 1400px;
+    position: relative;
+}
+.ryokan_title {
+    margin-top: 200px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    position: relative;
+}
+.ryokan_en {
+    display: inline-block;
+}
+
+/* ryokan explan */
+.ryo_explan {
+    width: 100%;
+    height: 1000px;
+    margin-top: 150px;
+    position: relative;
+}
+.ryo_img {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.ryo_img img {
+    width: 450px;
+}
+.ryo_ex1 {
+    position: absolute;
+    width: 150px;
+    top: 100px;
+    left: 200px;
+    writing-mode: tb-rl;
+}
+.ryo_ex2 {
+    position: absolute;
+    width: 400px;
+    top: 500px;
+    right: 0;
+    line-height: 1.8em;
+}
+
+
+
+/*--------- stay ---------*/
+#stay {
+    width: 100%;
+    z-index: -2;
+    position: relative;
+}
+.stay_banner {
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/stay_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* stay txt */
+#stay_con {
+    width: 1300px;
+    height: 1500px;
+    position: relative;
+}
+.stay_inner {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    right: 100px;
+    text-align: center;
+}
+.s_title {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    position: absolute;
+    text-align: center;
+    right: 50px;
+    top: -200px;
+}
+.stay_jp {
+    padding-top: 100px;
+    writing-mode: tb-rl;
+}
+.stay_txt {
+    margin-top: 200px;
+}
+
+
+/* stay img */
+.stay_inner_img {
+    width: 100%;
+    height: 1500px;
+    position: relative;
+}
+.stay1 img{
+    width: 300px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+.stay2 img{
+    width: 600px;
+    position: absolute;
+    top: 500px;
+    right: 0;
+}
+.stay3 img{
+    width: 600px;
+    position: absolute;
+    right: 0;
+    top: 930px;
+}
+
+
+/* tatami txt */
+.tatami {
+    position: relative;
+    top: 1070px;
+    width: 400px;
+    right: 230px;
+    text-align: right;
+}
+.tatami_jp {
+    margin-right: 15px;
+}
+.tatami_en {
+    margin: 10px -10px 30px 0;
+}
+.tatami_sub {
+    line-height: 1.8em;
+}
+
+
+/* about */
+#about {
+    width: 1200px;
+    height: 800px;
+    position: relative;
+}
+.about_room {
+    padding: 50px 0 50px 0;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* about detail */
+.about-detail {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+}
+.about_sub_title {
+    width: 15%;
+    font-weight: 700;
+    margin-top: 25px;
+    position: absolute;
+    text-align: right;
+}
+.detail {
+    width: 80%;
+    right: 0;
+    position: absolute;
+    padding-top: 25px;
+}
+.detail-2 {
+    margin-top: 30px;
+}
+.about-detail dl {
+    width: 33%;
+    float: left;
+}
+.about-detail dt {
+    width: 40%;
+    float: left;
+}
+.about-detail dd {
+    width: 50%;
+}
+
+
+/* about amenities */
+.about-amenities {
+    width: 100%;
+    height: 205px;
+    border-bottom: 1px solid #ccc;
+}
+.about_sub_ex {
+    width: 80%;
+    right: 0;
+    position: absolute;
+    padding-top: 25px;
+    line-height: 1.6em;
+}
+
+
+/* about service */
+.about-service {
+    width: 100%;
+    height: 135px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/*--------- food ---------*/
+#food {
+    width: 100%;
+    z-index: -2;
+    position: relative;
+}
+.food_banner {
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/food_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* food txt */
+#food_con {
+    width: 1300px;
+    height: 1500px;
+    position: relative;
+}
+.food_inner {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    left: 100px;
+    text-align: center;
+}
+.f_title {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    position: absolute;
+    text-align: center;
+    right: 50px;
+    top: -200px;
+}
+.food_jp {
+    padding-top: 100px;
+    writing-mode: tb-rl;
+}
+.food_txt {
+    margin-top: 200px;
+}
+
+/* food img */
+.food_inner_img {
+    width: 100%;
+    height: 1300px;
+    position: relative;
+}
+.food1 img{
+    width: 400px;
+    position: absolute;
+    top: 500px;
+    left: 100px;
+}
+.food2 img{
+    width: 600px;
+    position: absolute;
+    top: 200px;
+    right: 0;
+}
+
+
+/* gochisou txt */
+.gochisou {
+    position: relative;
+    top: 950px;
+    width: 400px;
+    left: -230px;
+    text-align: right;
+}
+.gochisou_en {
+    margin: 10px -10px 30px 0;
+}
+.gochisou_sub {
+    text-align: right;
+}
+
+/*--------- location ---------*/
+#location {
+    width: 1300px;
+    height: 600px;
+    position: relative;
+}
+.map iframe{
+    position: absolute;
+    width: 900px;
+    height: 400px;
+    border: 0;
+}
+
+/* location txt */
+.location_inner {
+    width: 380px;
+    height: 120px;
+    position: absolute;
+    right: 0px;
+    top: 250px;
+}
+.l_title {
+    width: 180px;
+    height: 80px;
+    position: absolute;
+    text-align: center;
+}
+.location_txt {
+    margin-top: 90px;
+    margin-left: 30px;
+}
+
+
+/*--------- footer ---------*/
+footer {
+    width: 1300px;
+    height: 300px;
+    position: relative;
+}
+.footer_txt {
+    margin-top: 90px;
+    position: absolute;
+}
+.footer_logo {
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+}
+.footer_logo img {
+    width: 100px;
+}
