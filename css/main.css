@@ -84,7 +84,7 @@ header {
     width: 150px;
     height: 80px;
     text-align: center;
-    float:right;
+    right:0;
     position: fixed;
 }
 .logo img {
